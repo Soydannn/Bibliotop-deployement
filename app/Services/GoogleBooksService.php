@@ -13,7 +13,7 @@ class GoogleBooksService
         // On récupère jusqu'à 40 résultats pour avoir plus de chance d'en trouver 10 avec notes
         $response = Http::get($this->baseUrl, [
             'q' => $query,
-            'maxResults' => 10,
+            'maxResults' => 40,
             'orderBy' => 'relevance',
         ]);
 
